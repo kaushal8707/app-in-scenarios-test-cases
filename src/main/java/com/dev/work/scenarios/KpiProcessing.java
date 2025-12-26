@@ -1,8 +1,14 @@
 package com.dev.work.scenarios;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
 public class KpiProcessing {
+    @Autowired
     ProcessEvent processEvent;
-    void execute(){
+
+    public void execute(){
         UserDetail userDetail = UserDetail.builder()
                 .userName("user-1")
                 .address("bangalore")

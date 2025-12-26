@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.ArgumentCaptor;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
@@ -53,15 +52,4 @@ public class ValidatorServiceTest {
         verify(hdfcAmountValidator, times(0)).getPriority();
         verify(hdfcAmountValidator, times(1)).retrieveFinalResult(any());
     }
-//    @Test
-//    void test_capture_kpi_argument_logs(){
-//        UserDetail user_detail = UserDetail.builder()
-//                .salary(13000)
-//                .userName("c101")
-//                .address("usa")
-//                .build();
-//        validatorService.
-//
-//    }
-
 }

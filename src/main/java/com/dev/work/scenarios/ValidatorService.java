@@ -6,7 +6,7 @@ import java.util.TreeSet;
 public class ValidatorService {
     static Set<AmountValidator> amountValidators;
     static boolean validateDetails;
-    ValidatorService(){
+    public ValidatorService(){
         amountValidators = new TreeSet<>();
         amountValidators.add(new AxisAmountValidator());
         amountValidators.add(new HdfcAmountValidator());
